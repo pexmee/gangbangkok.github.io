@@ -3,33 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gang Bangkok</title>
+    <title>Chef's Delight - Food Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* Global styles */
         body {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.8;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            color: #a9a9a9;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            padding: 0;
+            background-color: #fcf7f0;
+            color: #333;
         }
-        h1 {
-            font-size: 3em;
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        .bold-white {
-            font-weight: bold;
+
+        /* Header */
+        header {
+            background: #d35400;
             color: white;
-            text-shadow: 1px 1px 2px #a9a9a9, -1px -1px 2px #a9a9a9;
+            padding: 30px;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        /* Recipe Section */
+        .recipe-section {
+            padding: 20px;
+            text-align: left;
+        }
+        h2, h3 {
+            color: #d35400;
+            font-family: "Playfair Display", serif;
+        }
+        h2 {
+            font-size: 1.8em;
+        }
+        h3 {
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+
+        /* Recipe Image */
+        .recipe-image {
+            display: block;
+            max-width: 450px;
+            width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .recipe-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lists */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Welcome to Gang Bangkok - <span class="bold-white">Coming</span> Soon</h1>
+
+    <header>
+        <h1>Chef's Delight - Food Blog</h1>
+    </header>
+
+    <div class="container">
+        <div class="recipe-section">
+            <img src="dish.webp" alt="Pumpkin Gnocchi with Sage Butter" class="recipe-image">
+            <h2>Discovering the Magic of Homemade Pumpkin Gnocchi</h2>
+            <p><strong>Hello, dear food lovers!</strong></p>
+            <p>Today, I'm thrilled to share a recipe that's truly close to my heart—a delicate, homemade Pumpkin Gnocchi that encapsulates both the comfort of Italian cuisine and the cozy essence of fall...</p>
+
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>600g pumpkin puree (fresh is best, but canned works in a pinch!)</li>
+                <li>250g ricotta cheese, drained</li>
+                <li>2 large eggs</li>
+                <li>300g all-purpose flour, plus extra for dusting</li>
+                <li>75g Parmesan cheese, freshly grated</li>
+                <li>1 tsp nutmeg</li>
+                <li>Salt and pepper to taste</li>
+                <li>Sage leaves (a bunch)</li>
+                <li>50g unsalted butter</li>
+                <li>Salted water for boiling</li>
+            </ul>
+
+            <h3>Instructions:</h3>
+            <ol>
+                <li><strong>Preparation of Pumpkin Puree:</strong> Roast and blend pumpkin until smooth.</li>
+                <li><strong>Mixing the Dough:</strong> Combine pumpkin puree, ricotta, eggs, flour, Parmesan, nutmeg, salt, and pepper.</li>
+                <li><strong>Forming the Gnocchi:</strong> Roll the dough into logs, cut into pieces, and shape with a fork.</li>
+                <li><strong>Cooking the Gnocchi:</strong> Boil in salted water until they float.</li>
+                <li><strong>The Sage Butter:</strong> Melt butter, add sage leaves, and cook until aromatic.</li>
+                <li><strong>Combining and Serving:</strong> Toss gnocchi in sage butter and serve hot with extra Parmesan.</li>
+            </ol>
+
+            <h3>Chef's Tips:</h3>
+            <ul>
+                <li><strong>For a Gluten-Free Version:</strong> Use a gluten-free flour blend.</li>
+                <li><strong>Vegan Adaptation:</strong> Replace ricotta and Parmesan with plant-based alternatives.</li>
+            </ul>
+
+            <h3>Closing Thoughts</h3>
+            <p>Gathering your family and friends for a meal sharing this pumpkin gnocchi can turn any ordinary day into a special occasion...</p>
+        </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Chef's Delight. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
 
